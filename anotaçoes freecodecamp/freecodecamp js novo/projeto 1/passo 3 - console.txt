@@ -1,0 +1,1 @@
+o console é uma ferramenta poderosa encontrada nos navegadores, ela server para vistorar o seu codigo e ver ele está dando algum erro o até mesmo retornando uma variavel usando o comando console.log();

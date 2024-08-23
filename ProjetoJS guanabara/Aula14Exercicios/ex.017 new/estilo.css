@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+
+
+
+body{
+    background-image: linear-gradient(to right, rgb(77, 131, 1) 40%,rgb(2, 90, 24) );
+    background-attachment: fixed;
+    text-align: center;
+}
+
+header, footer{
+    font-family:"Homemade Apple" ;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.804);
+}
+
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(247, 247, 247)40%,rgb(204, 204, 204));
+    margin: auto;
+    padding: 13px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px rgba(2, 54, 4, 0.497);
+}
+
+div#tabu{
+    padding-right: 50px;
+}
+
+select#resu{
+    width: 150px;
+}

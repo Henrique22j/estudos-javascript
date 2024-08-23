@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade de condiçoes</title>
+</head>
+<body>
+   <h1>Avaliador de Nacionalidade</h1>
+   Digite o nome do seu país: <input type="text" name="txtp" id="txtp">
+   <input type="button" value="verificar" id="bt">
+   <div id="res"></div>
+    
+   <script>
+        let bt = window.document.querySelector('input#bt')
+        bt.addEventListener('click',Pais)
+        function Pais(){
+            let res = window.document.querySelector('div#res')
+            let pais = window.document.querySelector('input#txtp')
+            res.innerHTML=`<p>Vivendo em: <strong>${pais.value}</strong></p>`
+            if(pais.value == 'Brasil'){
+                res.innerHTML += '<p>Você é Brasileiro!!!</p>'
+                res.innerHTML += '<img src="https://i.pinimg.com/originals/b1/1f/70/b11f7039b513556886b426b7da96a32c.gif" alt="brasillll!!!">'
+            } else {
+                res.innerHTML += '<p>Você é Gringo!!!</p>'
+            }
+            
+        }
+   </script>
+      
+
+    
+</body>
+</html>

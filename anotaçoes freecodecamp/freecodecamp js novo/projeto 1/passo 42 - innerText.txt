@@ -1,0 +1,9 @@
+o innerText criar um texto dentro de um elemento
+
+exemplo do funcionamento do innerText:
+
+<p id="info">Demo content</p> 
+
+
+const info = document.querySelector("#info"); 
+info.innerText = "Hello World"; 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div#bloco {
+            font:normal 20pt Ariel;
+            color: rgb(51, 255, 0);
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4zv8smCbTfiE8J6c5SwGh_oLQzANAipzzi5fPFRadDzattchgTsMOI6DSlzfGbvJZ34&usqp=CAU');
+            background-repeat: no-repeat;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+
+            
+           
+           
+        }
+    </style>
+    <title>treinozin</title>
+</head>
+<h1>
+    testezin
+</h1>
+<body>
+    <div id="bloco" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
+       de boas
+    </div>
+</body>
+<script>
+    var mouse =document.querySelector("div#bloco")
+    function entrou(){
+        mouse.innerText = 'entrou'
+        mouse.style.background ='url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdXe4Xgh63gHkNH-LaQ-RN1qYYPF5c5Hvu3osqQCWJchVKLTAN9naTqzYBvO4jdkGGPes&usqp=CAU) no-repeat'
+        mouse.style.color = 'yellow'
+    }
+    function clicou(){
+        mouse.innerText ='clicou'
+        mouse.style.background = 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_hkPuQwZ1jgu9KdPAaIU8d_NBswpM_fRGiRRWO99sTe0bMnHBjYBNzR6N-Hr3ace6Atc&usqp=CAU) no-repeat'
+        mouse.style.color = 'red'
+    }
+    function saiu(){
+        mouse.innerText = 'saiu'
+        mouse.style.background ='url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE4zv8smCbTfiE8J6c5SwGh_oLQzANAipzzi5fPFRadDzattchgTsMOI6DSlzfGbvJZ34&usqp=CAU) no-repeat'
+        mouse.style.color ='green'
+    }
+</script>
+</html>

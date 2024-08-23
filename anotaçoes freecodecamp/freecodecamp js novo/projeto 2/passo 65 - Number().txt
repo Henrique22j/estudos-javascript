@@ -1,0 +1,10 @@
+Lembre-se de que return encerra a execução de uma função. Após o bloco if, você precisa lidar com a lógica para quando a entrada for válida. Como sua instrução if retorna um valor, você não precisa de uma instrução else.
+
+Use o operador de atribuição de adição para adicionar currVal ao total de calorias. Você precisará usar o construtor Number para converter currVal em um número.
+
+O construtor Number é uma função que converte um valor em um número. Se o valor não puder ser convertido, ele retornará NaN, que significa "Not a Number".
+
+Aqui está um exemplo:
+
+Number('10'); // returns the number 10
+Number('abc'); // returns NaN

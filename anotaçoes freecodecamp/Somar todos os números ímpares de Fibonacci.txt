@@ -1,0 +1,25 @@
+function sumFibs(num) {
+  let arrNum = [0,1];
+  let total = 0
+
+
+  for(let cont = 2; cont <= num ;cont++){
+    if(arrNum[cont-1] + arrNum[cont-2] <= num){
+      arrNum.push(arrNum[cont-1] + arrNum[cont-2])
+    } 
+  }
+
+
+  let newArr = arrNum.filter((numero) => {
+    return numero % 2 !== 0;
+  })
+
+  for(let som = 0; som<newArr.length; som++){
+    total+=newArr[som]
+  }
+
+
+  return total;
+}
+
+console.log(sumFibs(4));

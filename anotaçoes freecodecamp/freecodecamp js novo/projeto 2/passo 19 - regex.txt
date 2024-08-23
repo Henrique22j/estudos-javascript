@@ -1,0 +1,54 @@
+Para combinar caracteres específicos em uma string, você pode usar Expressões Regulares ou “regex” para abreviar.
+
+Regex em JavaScript é indicado por um padrão envolto em barras. O exemplo a seguir corresponderá à string literal "hello":
+
+const regex = /hello/;
+
+Declare uma variável regex e atribua a ela o valor do exemplo acima. Nas etapas futuras, você atualizará esse padrão regex para corresponder aos caracteres específicos necessários para o contador de calorias
+
+O padrão atual corresponderá exatamente ao texto "olá", que não é o comportamento desejado. Em vez disso, você deseja pesquisar +, - ou espaços. Substitua o padrão em sua variável regex por \+- para corresponder aos caracteres de mais e menos.
+
+Observe que você precisa usar o caractere barra invertida \ para escapar do símbolo + porque ele tem um significado especial em expressões regulares.
+
+Em regex, as classes de caracteres abreviados permitem combinar caracteres específicos sem precisar escrevê-los em seu padrão. As classes de caracteres abreviados são precedidas por uma barra invertida (\). A classe de caracteres \s corresponderá a qualquer caractere de espaço em branco. Adicione isso ao seu padrão regex.
+
+Seu padrão atual ainda não funcionará. /+-\s/ procura por +, - e um espaço em ordem. Isso corresponderia a +- hello, mas não corresponderia a +hello.
+
+Para que o padrão corresponda a cada um desses caracteres individualmente, você precisa transformá-los em uma classe de caracteres. Isso é feito colocando os caracteres que você deseja corresponder entre colchetes. Por exemplo, este padrão corresponderá aos caracteres h, e, l ou o:
+
+const regex = /[helo]/;
+
+Transforme seu padrão +-\s em uma classe de personagem. Observe que você não precisa mais escapar do caractere +, pois está usando uma classe de personagem.
+
+SINALIZADOR G =======================================================================================================================
+
+Regex também pode usar sinalizadores específicos para alterar o comportamento de correspondência de padrões. Os sinalizadores são adicionados após o fechamento /. A bandeira g, que significa “global”, dirá ao padrão para continuar procurando depois de encontrar uma correspondência. Aqui está um exemplo:
+
+const helloRegex = /hello/g;
+
+Adicione o sinalizador g ao seu padrão regex.
+
+
+
+SINALIZADOR I ======================================================================================================================
+
+A entrada "e" em um número também pode ser um "E" maiúsculo. Entretanto, Regex tem um sinalizador para isso - o sinalizador i, que significa "insensível".
+
+/Hello/i
+
+corresponderia a hello, Hello, HELLO e até hElLo por causa do sinalizador i. Este sinalizador torna seu padrão insensível a maiúsculas e minúsculas.
+
+Adicione o sinalizador i ao seu padrão regex.
+
+Classe de caracteres [0-9] ========================================================================================================
+
+as entradas de número permitem apenas que e ocorra entre dois dígitos. Para corresponder a qualquer número, você pode usar a classe de caracteres [0-9]. Isso corresponderá a qualquer dígito entre 0 e 9.
+
+Adicione esta classe de personagem antes e depois de e em seu padrão.
+O modificador + em uma regex permite combinar um padrão que ocorre uma ou mais vezes. Para corresponder ao seu padrão de dígitos uma ou mais vezes, adicione um sinal de adição após cada uma das classes de caracteres de dígitos. Por exemplo: [0-9]+.
+
+Existe uma classe de caracteres abreviados para corresponder a qualquer dígito: \d. Substitua suas classes de caracteres [0-9] por esta abreviação.
+
+
+
+

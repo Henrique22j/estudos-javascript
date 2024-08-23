@@ -1,0 +1,28 @@
+function smallestCommons(arr) {
+    // Função para calcular o MDC de dois números
+    function calcularMDC(a, b) {
+        while (b !== 0) {
+            let temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    // Função para calcular o MMC de dois números
+    function calcularMMC(a, b) {
+        return (a * b) / calcularMDC(a, b);
+    }
+
+    // Encontrar o MMC de um intervalo de números
+    let mmc = arr[0];
+    for (let i = arr[0] + 1; i <= arr[1]; i++) {
+        mmc = calcularMMC(mmc, i);
+    }
+
+    return mmc;
+}
+
+// Exemplo de uso
+let resultado = smallestCommons([1, 5]);
+console.log(resultado); // Saída esperada: 60

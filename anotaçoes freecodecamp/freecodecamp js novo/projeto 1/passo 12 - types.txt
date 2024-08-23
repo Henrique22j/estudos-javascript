@@ -1,0 +1,1 @@
+existem varios tipos de dados mas os principais sao as strings, numbers, functions , arrays entre outros

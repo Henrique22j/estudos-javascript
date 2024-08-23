@@ -1,0 +1,20 @@
+function sumPrimes(num) {
+let resu = 0
+  function isPrime(numb) {
+    if(numb < 2) return false;
+    for (var i = 2; i < numb; i++) {
+        if(numb%i==0)
+            return false;
+    }
+    return true;
+}
+
+for(let cont = 0; cont <= num; cont++){
+  if(isPrime(cont)){
+      resu += cont
+  }
+}
+  return resu;
+}
+
+console.log(sumPrimes(977));

@@ -1,0 +1,6 @@
+Você tem repetição nas funções goTown e goStore. Quando você tem repetição em seu código, é sinal de que você precisa de outra função. As funções podem receber parâmetros, que são valores fornecidos à função cada vez que ela é executada. Aqui está uma função que recebe um parâmetro chamado param:
+
+function minhaFunção(param) {
+    console.log(param);
+}
+Crie uma função de atualização vazia que receba um parâmetro chamado location.

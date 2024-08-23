@@ -1,0 +1,7 @@
+
+Finalmente, você precisa tornar o elemento #output visível para que o usuário possa ver seu texto. Sua variável de saída é um Element, que possui uma propriedade classList. Esta propriedade possui um método .remove(), que aceita uma string representando a classe a ser removida do elemento.
+
+const paragraphElement = document.getElementById('paragraph');
+paragraphElement.classList.remove('hide');
+
+Use o método .remove() da propriedade classList da variável de saída para remover a classe oculta. Não se esqueça de colocar a palavra ocultar entre aspas.

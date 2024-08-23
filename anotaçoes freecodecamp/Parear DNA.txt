@@ -1,0 +1,22 @@
+function pairElement(str) {
+  let strArr = str.split('')
+  let newArr = []
+  for(let cont = 0; cont < strArr.length; cont++){
+    switch(strArr[cont]){
+      case "A":
+        newArr.push(["A","T"]);
+      break
+      case "T":
+        newArr.push(["T","A"]);
+      break
+      case "G":
+        newArr.push(["G","C"]);
+      break
+      case "C": 
+        newArr.push(["C","G"]);
+    }
+  }
+  return newArr;
+}
+
+console.log(pairElement("ATCGA"));

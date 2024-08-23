@@ -1,0 +1,1 @@
+Arrays possuem uma propriedade length que retorna o número de itens no array. Você pode querer adicionar novos valores ao conjunto de armas no futuro

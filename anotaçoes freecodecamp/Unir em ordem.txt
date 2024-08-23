@@ -1,0 +1,26 @@
+Escreva uma função que recebe dois ou mais arrays e retorne um novo array de valores únicos na ordem do array original fornecido.
+
+Em outras palavras, todos os valores presentes de todos os arrays devem ser incluídos na sua ordem original, mas sem valores duplicados no array final.
+
+Os números únicos devem ser ordenados pela sua ordem original, mas o array final não deve ser ordenado em ordem numérica.
+
+Verifique os testes de asserção para exemplos.
+
+
+
+function uniteUnique(...arr) {
+  let arrDiv = arr.slice(1)
+  let arrOne = [...arr[0]]
+  let arrSecond = arrDiv.flat()
+  let eliminate = new Set(arrOne)
+  let arrNewSec = arrSecond.filter(element => !eliminate.has(element))
+  let newArr = arrOne.concat(arrNewSec)
+  let arrFinal = newArr.filter((valor,index,self) =>{
+      return self.indexOf(valor) === index
+  })
+  
+
+  return arrFinal;
+}
+
+console.log(uniteUnique([1, 3, 2, 3], [5, 2, 1, 4], [2, 1]));

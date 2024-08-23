@@ -1,0 +1,7 @@
+function spinalCase(str) {
+   let frase = str.split(/(?=[A-Z])|\s+|_/).join('-')
+  return frase.toLowerCase()
+  
+}
+
+console.log(spinalCase("The_Andy_Griffith_Show"));

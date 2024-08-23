@@ -1,0 +1,22 @@
+Complete o código para a função squareList usando qualquer combinação de map(), filter() e reduce(). A função deve retornar uma nova matriz contendo apenas os inteiros positivos (números decimais não são inteiros) elevados ao quadrado quando uma matriz de números reais é passada para ela. Um exemplo de array de números reais é [-3, 4.8, 5, 3, -3.2].
+
+
+
+
+
+const squareList = arr => {
+  // Altere apenas o código abaixo desta linha
+  let filtro = arr.reduce((acumulador,vAtual) => {
+    if(vAtual >= 0 && Number.isInteger(vAtual)/*verifica se o numero é inteiro*/){
+      const multi = vAtual ** 2
+      acumulador.push(multi);
+
+    } return acumulador},[])
+ 
+   
+  return filtro;
+  // Altere apenas o código acima desta linha
+};
+
+const squaredIntegers = squareList([4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]);
+console.log(squaredIntegers);

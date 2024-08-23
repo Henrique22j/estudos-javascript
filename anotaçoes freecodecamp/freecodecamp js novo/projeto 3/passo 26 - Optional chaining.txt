@@ -1,0 +1,20 @@
+O encadeamento opcional (?.) ajuda a evitar erros ao acessar propriedades aninhadas que podem ser nulas ou indefinidas. Por exemplo:
+
+const user = {
+  name: "Quincy",
+  address: {
+    city: "San Francisco",
+    state: "CA",
+    country: "USA",
+  },
+};
+
+// Accessing nested properties without optional chaining
+const state = user.address.state; // CA
+
+// Accessing a non-existent nested property with optional chaining
+const zipCode = user.address?.zipCode; // Returns undefined instead of throwing an error
+
+
+Chame a função renderSongs com a propriedade songs de userData. Isso renderizará as músicas da lista de reprodução.
+

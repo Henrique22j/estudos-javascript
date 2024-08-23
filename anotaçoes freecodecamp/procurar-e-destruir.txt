@@ -1,0 +1,32 @@
+function destroyer(arr,...rest) {
+  let arrRest = new Set(rest)
+  return arr.filter(element => !arrRest.has(element));
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3))
+
+Criação de um Set a partir dos argumentos adicionais:
+
+
+const arrRest = new Set(rest);
+
+
+Aqui, rest é um array contendo os argumentos adicionais passados para a função usando o operador rest (...). Um Set é então criado a partir desse array.
+A escolha de usar um Set é feita para otimizar a verificação de existência de elementos, já que um Set oferece uma busca mais eficiente do que um array.
+Uso do método filter para criar um novo array:
+
+
+return arr.filter(element => !arrRest.has(element));
+
+
+arr é o array original que estamos processando.
+O método filter é utilizado para criar um novo array contendo apenas os elementos que atendem a uma determinada condição.
+A condição é especificada pela função de callback passada para o filter. Neste caso, a condição é !arrRest.has(element), que significa "não tem em arrRest". Em outras palavras, estamos filtrando os elementos que não estão presentes em arrRest.
+Retorno do novo array filtrado:
+
+
+return arr.filter(element => !arrRest.has(element));
+
+
+O resultado da operação é o novo array que contém apenas os elementos que não estão presentes nos argumentos adicionais.
+A principal vantagem dessa abordagem é a simplicidade e clareza do código. Além disso, ela é mais eficiente do ponto de vista de desempenho, especialmente quando se lida com arrays grandes, devido à eficiência da busca em um Set.

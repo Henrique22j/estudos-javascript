@@ -1,0 +1,70 @@
+O método sort() converte elementos de um array em strings e os classifica com base em seus valores na codificação UTF-16.
+
+const names = ["Tom", "Jessica", "Quincy", "Naomi"];
+names.sort() // ["Jessica", "Naomi", "Quincy", "Tom"]
+
+
+Dentro de sua função sortSongs, adicione o método sort() a userData?.songs.
+
+
+
+Para classificar as músicas em ordem alfabética por título, você precisará passar uma função de retorno de chamada de comparação para o seu método sort().
+
+Aqui está um exemplo de classificação de uma lista de frutas por nome.
+
+const fruits = [
+  { name: "Apples", price: 0.99 },
+  { name: "Blueberries", price: 1.49 },
+  { name: "Grapes", price: 2.99 },
+];
+
+fruits.sort((a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  }
+
+  if (a.name > b.name) {
+    return 1;
+  }
+
+  return 0;
+});
+
+Nas próximas etapas, você aprenderá o que cada uma dessas instruções if está fazendo dentro da função de retorno de chamada. Mas, por enquanto, adicione uma função de retorno de chamada vazia ao seu método sort() e use a e b para os nomes dos parâmetros.
+
+
+O método sort() aceita uma função de retorno de chamada de comparação que define a ordem de classificação.
+
+Neste exemplo, a primeira condição (a.name < b.name) verifica se o nome da primeira fruta é menor que o nome da segunda fruta. Nesse caso, a primeira fruta é classificada antes da segunda fruta.
+
+As strings são comparadas lexicograficamente, o que significa que são comparadas caractere por caractere. Por exemplo, “Maçãs” é menor que “Bananas” porque “A” vem antes de “B” no alfabeto.
+
+A razão pela qual este exemplo está retornando números é porque o método sort() espera que um número seja retornado. Se você retornar um número negativo, o primeiro item será classificado antes do segundo item.
+
+A segunda condição neste exemplo verifica se a.name > b.name. Nesse caso, a função retorna 1, que classifica a primeira fruta após a segunda fruta.
+
+No exemplo, se a.name for igual a b.name, então a função retornará 0. Isso significa que nada muda e a ordem de a e b permanece a mesma.
+
+
+const fruits = [
+  { name: "Apples", price: 0.99 },
+  { name: "Blueberries", price: 1.49 },
+  { name: "Grapes", price: 2.99 },
+];
+
+fruits.sort((a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  }
+
+  if (a.name > b.name) {
+    return 1;
+  }
+
+  return 0;
+});
+
+
+
+
+

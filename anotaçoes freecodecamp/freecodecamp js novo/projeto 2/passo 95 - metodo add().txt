@@ -1,0 +1,1 @@
+Método .add() que é o oposto do método .remove(). Ele aceita uma string representando a classe a ser adicionada ao elemento.

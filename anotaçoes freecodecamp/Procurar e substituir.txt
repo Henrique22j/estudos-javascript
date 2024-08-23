@@ -1,0 +1,28 @@
+function myReplace(str, before, after) {
+  let arrSplit = str.split(" ")
+  let newBefore = before.split('')
+  let newAfter = after.split('')
+
+  if(newBefore[0] === newBefore[0].toUpperCase()){
+    let upper = newAfter[0].toUpperCase()
+       newAfter.splice(0,1,upper)   
+  }else{
+    let lower = newAfter[0].toLowerCase()
+       newAfter.splice(0,1,lower) 
+  }
+
+  
+
+  let posicao = arrSplit.indexOf(before)
+
+  arrSplit.splice(posicao,1,newAfter.join(''))
+  
+
+   return arrSplit.join(' ') 
+
+
+  
+}
+
+;
+console.log(myReplace("I think we should look up there", "up", "Down"))

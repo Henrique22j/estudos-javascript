@@ -1,0 +1,14 @@
+function truthCheck(collection, pre) {
+    const mapPre = collection.map((obj) => ({
+      predicate:obj[pre]
+    }))
+  return mapPre.reduce((acc,obj) => {
+    if(obj['predicate']){
+      return true && acc
+    } else{ 
+      return false
+    }
+  }, true);
+}
+
+console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "name"));

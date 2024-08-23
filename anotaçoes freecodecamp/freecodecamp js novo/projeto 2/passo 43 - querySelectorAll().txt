@@ -1,0 +1,11 @@
+Você desejará numerar as entradas que um usuário adiciona. Para obter todas as entradas numéricas, você pode usar o método querySelectorAll().
+
+O método querySelectorAll() retorna um NodeList de todos os elementos que correspondem ao seletor. Um NodeList é um objeto semelhante a um array, então você pode acessar os elementos usando a notação de colchetes.
+
+Declare uma variável entryNumber e atribua a ela o valor de targetInputContainer.querySelectorAll(). Você ainda não precisa passar um argumento para o seletor de consulta.
+
+Cada entrada terá uma entrada de texto para o nome da entrada e uma entrada numérica para as calorias. Para obter uma contagem do número de entradas, você pode consultar por entradas de texto. Observe que você não pode consultar por entradas numéricas, pois você tem uma entrada numérica extra para o orçamento calórico do usuário.
+
+Passe a string input[type="text"] para o método querySelectorAll(). Lembre-se de que você precisará usar aspas simples em sua string, para poder usar aspas duplas.
+
+Isso retornará um NodeList de todas as entradas de texto no formulário. Você pode então acessar a propriedade length do NodeList para obter o número de entradas. Faça isso na mesma linha.

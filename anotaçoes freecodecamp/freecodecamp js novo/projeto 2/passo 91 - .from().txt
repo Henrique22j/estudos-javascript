@@ -1,0 +1,15 @@
+Lembre-se de que document.querySelectorAll retorna um NodeList, que é semelhante a um array, mas não é um array. No entanto, o objeto Array possui um método .from() que aceita um tipo de array e retorna um array. Isso é útil quando você deseja acessar métodos de array mais robustos, sobre os quais aprenderemos em um projeto futuro.
+
+O exemplo a seguir pega um NodeList de elementos li e o converte em um array de elementos li:
+
+<ul>
+  <li>List 1</li>
+  <li>List 2</li>
+  <li>List 3</li>
+</ul>
+const listItemsArray = Array.from(document.querySelectorAll('li'));
+
+console.log(listItemsArray); //Output: (3) [li, li, li]
+
+Envolva seu seletor de consulta inputContainers em Array.from(). Faça isso na mesma linha da sua declaração.
+

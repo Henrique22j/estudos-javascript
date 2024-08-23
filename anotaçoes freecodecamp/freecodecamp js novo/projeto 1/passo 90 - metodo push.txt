@@ -1,0 +1,14 @@
+No início deste projeto, você criou um array chamado inventory. Adicione newWeapon ao final desse array usando o método push().
+
+Aqui está um exemplo:
+
+const arr = ["first"];
+const next = "second";
+arr.push(next);
+
+ método push é uma função embutida no JavaScript que permite adicionar um elemento ou vários elementos ao final de um array existente.
+
+
+
+let pushed = rows.push("freeCodeCamp");
+push() retorna o novo comprimento do array, após adicionar o valor que você forneceu.

@@ -1,0 +1,6 @@
+Um loop for...of é usado para iterar sobre elementos em um objeto iterável, como um array. A variável declarada no loop representa o elemento atual que está sendo iterado.
+
+for (const element of elementArray) {
+  console.log(element);
+}
+

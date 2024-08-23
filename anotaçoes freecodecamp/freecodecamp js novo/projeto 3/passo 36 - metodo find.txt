@@ -1,0 +1,9 @@
+O método find() recupera o primeiro elemento dentro de um array que atende às condições especificadas na função de retorno de chamada fornecida. Se nenhum elemento satisfizer a condição, o método retornará indefinido.
+
+No exemplo abaixo, o método find() é usado para encontrar o primeiro número maior que 25
+
+const numbers = [10, 20, 30, 40, 50];
+
+// Find the first number greater than 25
+const foundNumber = numbers.find((number) => number > 25);
+console.log(foundNumber); // Output: 30

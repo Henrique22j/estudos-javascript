@@ -1,0 +1,11 @@
+Como os usuários poderão embaralhar e excluir músicas da lista de reprodução, você precisará criar uma cópia do array allSongs sem alterar o original. É aqui que o operador spread se torna útil.
+
+O operador spread (...) permite copiar todos os elementos de um array para outro. Também pode ser usado para concatenar vários arrays em um. No exemplo abaixo, arr1 e arr2 foram espalhados em combinadoArr:
+
+Código de exemplo
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+const combinadoArr = [...arr1, ...arr2];
+console.log(combinedArr); //Saída: [1, 2, 3, 4, 5, 6]
+Dentro do objeto userData crie uma propriedade songs. Para o valor, distribua allSongs em uma matriz.

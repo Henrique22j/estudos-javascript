@@ -1,0 +1,23 @@
+Strings têm um método .match(), que recebe um argumento regex. .match() retornará um array de resultados de correspondência – contendo a primeira correspondência ou todas as correspondências se o sinalizador global for usado.
+
+const str = 'example string';
+const regex = /example/;
+const result = str.match(regex); // Returns ['example']
+
+Retorne o resultado da chamada do método .match() em str e passando sua variável regex como argumento. Você usará esse resultado da partida mais tarde.
+
+Ao abrir o console, você deverá ver este resultado:
+
+[ '1e3', index: 0, input: '1e3', groups: undefined ]
+
+O método match retorna um array com todas as correspondências encontradas na string.
+
+Aqui está uma análise completa dessas informações:
+
+"1e3" é o valor correspondente ao regex /\d+e\d+/i.
+índice: 0 é o índice do valor correspondente na string.
+input: '1e3' é a string original que foi correspondida.
+ groups: undefined : são os grupos correspondentes, que não são usados ​​neste caso. Você aprenderá mais sobre grupos em um projeto posterior.
+Agora é hora de testar uma entrada válida. Atualize sua instrução de console para o seguinte: console.log(isInvalidInput("10")).
+
+Abra o console para ver o resultado. Você aprenderá mais sobre o que esse resultado significa na próxima etapa.

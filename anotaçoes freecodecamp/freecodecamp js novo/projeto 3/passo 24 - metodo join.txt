@@ -1,0 +1,12 @@
+O método join() é usado para concatenar todos os elementos de um array em uma única string. É necessário um parâmetro opcional chamado separador, que é usado para separar cada elemento do array. Por exemplo:
+
+Código de exemplo
+const exemploArr = ["Este", "é", "a", "frase"];
+frase const = exemploArr.join(" "); // O separador recebe um caractere de espaço
+console.log(frase); // Saída: "Esta é uma frase"
+Encadeie o método join() ao seu método map() e passe uma string vazia para o separador.
+
+Para encadear vários métodos, você pode chamar o método join() no resultado do método map(). Por exemplo:
+
+Código de exemplo
+array.map().join();

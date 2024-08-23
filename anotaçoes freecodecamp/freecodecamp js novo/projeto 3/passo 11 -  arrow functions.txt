@@ -1,0 +1,92 @@
+Nos projetos anteriores, você usou funções regulares. Mas no restante dos projetos, você trabalhará com funções de seta(arrows functions). As próximas etapas se concentrarão em ensinar o básico das funções das setas.
+
+Uma função de seta é uma expressão de função anônima e uma maneira mais curta de escrever funções. Anônimo significa que a função não tem nome. As funções de seta são sempre anônimas.
+
+Aqui está a sintaxe básica:
+
+() => {}
+
+
+To create a named arrow function, you can assign the function to a variable:
+
+const exampleFunction = () => {
+  // code goes here
+}
+
+Create a new named arrow function called printGreeting. Inside the body of that function use the console.log() method to print the string "Hello there!".
+
+const printGreeting = () => {
+  console.log("Hello there!")
+}
+
+
+printGreeting()
+
+Para chamar uma expressão de função de seta nomeada, você pode referenciar a função pelo seu nome.
+
+Código de exemplo
+
+exemploArrowFunction();
+
+Abaixo da definição da função printGreeting, chame a função. Abra o console para ver a saída.
+
+Assim como as funções regulares, as funções de seta podem aceitar vários parâmetros.
+
+Aqui está um exemplo de uma função de seta nomeada com um parâmetro:
+
+Código de exemplo
+const saudação = (nome) => {
+  console.log(`Olá, ${nome}!`);
+};
+Se a função tiver apenas um parâmetro, você poderá omitir os parênteses ao redor da lista de parâmetros assim:
+
+Código de exemplo
+
+
+const saudação = nome => {
+  console.log(`Olá, ${nome}!`);
+};
+
+
+Crie uma nova função de seta nomeada chamada printMessage que possui um parâmetro chamado org. Dentro do corpo dessa função, adicione uma instrução console. Dentro dessa instrução do console, adicione o modelo literal ${org} é incrível!.
+
+Abaixo da função printMessage, chame a função e passe a string "freeCodeCamp" como argumento.
+
+Abra o console para ver o resultado.
+
+Assim como as funções regulares, as funções de seta podem retornar valores.
+
+Aqui está um exemplo de uma função de seta que retorna o resultado da multiplicação de dois números:
+
+Código de exemplo
+const multiplicarDoisNúmeros = (num1, num2) => {
+  retornar num1 * num2;
+}
+
+//Saída: 12
+console.log(multiplyTwoNumbers(3, 4)); 
+Crie uma nova variável chamada addTwoNumbers e atribua a ela uma função de seta. Esta função de seta deve receber dois parâmetros chamados num1 e num2. Dentro do corpo da função, retorne a expressão de adição de num1 e num2.
+
+Abaixo da função addTwoNumbers, adicione uma instrução de console. Dentro dessa instrução de console, chame a função addTwoNumbers e passe os números 3 e 4 como argumentos.
+
+Abra o console para ver a saída.
+
+
+Se a função de seta estiver retornando uma expressão simples, você poderá omitir a palavra-chave return e as chaves {}. Isso é chamado de retorno implícito.
+
+Código de exemplo
+const multiplicarDoisNúmeros = (num1, num2) => num1 * num2;
+Se sua função de seta tiver várias linhas de código no corpo da função, você precisará usar a palavra-chave return e as chaves {}.
+
+Código de exemplo
+const getTax = (preço) => {
+  taxa de imposto const = 0,08;
+  const imposto = preço * taxa de imposto;
+  imposto de retorno;
+};
+Refatore ou atualize sua função addTwoNumbers para remover a palavra-chave return e as chaves {}. Sua função addTwoNumbers deve usar um retorno implícito.
+
+Abra o console para ter certeza de que ainda está obtendo a saída correta.
+
+const addTwoNumbers = (num1, num2) => 
+   num1 + num2

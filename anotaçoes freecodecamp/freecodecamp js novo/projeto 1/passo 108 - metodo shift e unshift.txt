@@ -1,0 +1,8 @@
+O método shift remove o elemento de índice zero, diminui em 1 os indices dos demais valores e retorna o valor removido. Se a propriedade length for 0, então undefined é retornado. shift é intencionalmente genérico; esse método pode ser chamado ou aplicado para objetos parecidos com arrays.
+
+ex: 
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();
+
+resultado: Orange,Apple,Mango

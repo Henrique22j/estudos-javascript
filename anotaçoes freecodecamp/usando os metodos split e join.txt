@@ -1,0 +1,8 @@
+function sentensify(str) {
+  // Altere apenas o código abaixo desta linha
+    let arrStr = str.split(/[^\w\s]/g)
+    return arrStr.join(" ")
+  // Altere apenas o código acima desta linha
+}
+
+console.log(sentensify("May-the-force-be-with-you"))

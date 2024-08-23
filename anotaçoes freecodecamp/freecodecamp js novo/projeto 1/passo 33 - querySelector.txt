@@ -1,0 +1,1 @@
+seleciona um id, class, name entre outro...  ex: document.queryselector(div#idDiv) . para class e # para id

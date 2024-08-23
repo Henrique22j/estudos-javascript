@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicando valores</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+            background-image: url('https://static.mobly.com.br/p/Papel-e-Parede-Papel-De-Parede-Quadro-Negro-Lousa-Adesivo-Vinil-LavC3A1vel-0623-325798-3-zoom.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100vw;
+            color: aliceblue;
+        }
+
+        input{
+            font: normal 18pt Arial;
+            width: 180px;
+        }
+
+        #res{
+            margin-top: 40px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>multiplicação de numeros</h1>
+    <input type="number" name="txtn1" id="txtn1"> x
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="multi" id="button">
+    <div id="res">Resultado</div>
+    <script>
+       let button = window.document.getElementById('button')
+       button.addEventListener('click',multi) 
+        function multi(){
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.querySelector('input#txtn2')
+            resu =  Number(tn2.value) * Number(tn1.value)
+            res.innerHTML = `A multiplicação entre <strong>${tn1.value}</strong> e <strong>${tn2.value}</strong> é igual a <strong>${resu}</strong>`
+            }
+       </script> 
+    </body>
+</html>

@@ -1,0 +1,7 @@
+let é uma palavra-chave usada para declara variaveis, var,const tambem são usadas para declarar variaveis porem var ele é perigosa pois se ela parecer dentro de uma funçao pode ser que ela seja chamada em outro algum que a let nao tem, ja a const, ela faz com que o material amazenado dentro dela não seja reatribuido.
+
+Declarar uma variável com a palavra-chave let permite que ela seja reatribuída. Isso significa que você pode alterar o caractere posteriormente para um valor completamente diferente.
+
+Para este projeto, você não desejará alterar os valores dessas variáveis. Então, em vez disso, você deve usar const para declará-los. variáveis ​​const são especiais.
+
+Primeiro, uma variável const não pode ser reatribuída como uma variável let.

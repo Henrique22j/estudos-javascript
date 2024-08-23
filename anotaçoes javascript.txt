@@ -1,0 +1,346 @@
+=Comentarios=
+
+// uma unica linha
+
+/*
+  mais de uma
+  linha de
+  codigo
+*/
+
+=NOME DAS VARIAVEIS (IDENTIFICADORES)=
+===================================================================================================================
+
+. = significa recebe
+ 
+. podem começar com letra, $ ou _
+
+. não podem começar com numeros
+
+. é possivel usar letras ou numeros
+
+. é possivel usar acentos e simbolos
+
+. não podem conter espaços
+
+. não podem conter palavras reservadas, ou seja que o javascript ja utiliza(ex: var, let, alert etc...)
+
+. maiusculo e minusculo fazem diferença ( ex: let a = 10 é diferente let A = 20)
+
+ DICAS PARA NOMES
+   
+    .tente escolher nomes coerentes com a variavel ( ex: a variavel que guarda o salario se chamar salario ou sal pelo menos)
+= PRINCIPAIS TIPOS DE DADOS PRIMITIVOS=
+====================================================================================================================================
+
+.Number: encluem numeros inteiros e flutuantes
+
+.String: encluem cadeia de caracteres tipo letras, numeros, acentos e simbolos
+
+.Boolean: encluem os valores true e false
+    
+    DICA
+         . o comando typeof é utilizado para identificar o tipo dos dados, pode ser usado tanto com uma variavel (ex: typeof idade vai dar number, pois idade é uma variavel) como diretamente com o dado (ex: typeof 100 vai dar number)
+
+         . (number + number) adição, (string + string) concatenação
+
+         . Number.parseInt(n) transforma string e float em inteiro
+
+         . Number.parseFloat(n) transforma String e int em reais 
+
+         . somente Number(n) pode tranformar string em int ou float na qual decide a propria linguagem.
+
+	 . n1.toFixed(ex) mostra as quantidades de casas decimais dependendo do valor inserido. exemplo 100.1.toFixed(2) mostra 100.10
+
+         . String(n) e n.toString() transforma number em string.
+
+         .n.length diz quantos caracteres a string tem.
+
+         .n.toUpperCase() deixa tudo em maisculo.
+
+         .n.toLowerCase() deixa tudo em minusculo.
+
+         .n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'}), esse comando converte um number para um valor monetario que no caso é o real.
+
+         .n1.toLocaleString('pt-BR',{style: 'currency', currency: 'USD'}), Mundando o valor do final ele mostra outra moeda que no caso é o dolar.
+
+= PRINCIPAIS TIPOS DE OPERADORES=
+====================================================================================================================
+
+.aritmético
+.atribuição
+.relacionais
+.lógico
+.ternário 
+
+Aritméticos
+   Operadores
+    . + é soma
+    . - é menos
+    . * é vezes
+    . / é divisão de reias (exemplo: 5/2 == 2.5)
+    . % é divisão de inteiros (exemplo 5%2 == 1, resto da divisão)
+    . ** é potencia
+
+    DICAS
+      . a  divisão tem prioridade sobre a soma na hora do calculo (5 + 3 / 2 = 6.5, a linguagem deu prioridade a divisão), a solução é colocar parenteses ((5 + 3) / 2 = 4)
+OPERADORES DE ATRIBUIÇÃO
+=======================================================================================================================================
+      . n += 4 é igual a n = n + 4 ( Operadores de atribuição, funciona com qualquer operador ex: n -= 5, n *= 4, n /= 2, n **= 4 ...)
+      . n++ e n-- é igual a n = n + 1  e n = n - 1 ( operadores de incremento) podem ser escritos tb assim: ++n --n
+
+ORDEM DE PRECEDÊNCIA (PRIORIDADE)
+===================================================================================================================
+   Mais precendente: parenteses  () 
+
+   Segundo mais precendente: potencia **
+
+   Terceiros mais precedentes: multiplicação *, divisão de reias / e divisão de inteiros %
+
+   Quartos mais precendetes: soma + e subtração -
+
+
+OPERADORES RELACIONAIS
+================================================================================================================
+> maior que
+< menor que
+>= maior ou igual a 
+<= menor ou igual a
+== igual 
+!= diferente
+
+.O resultado dessas operaçoes é verdadeiro ou falso ou seja booleano ( ex: 5 > 2 True, 4 != 4 False).
+
+OPERADORES DE IDENTIDADE
+
+5 == "5"  true ( 5 é igual a "5" )
+
+para resolver esse problema de um number ser igual a uma string foi criado o operador de identidade ( === )
+
+exemplo com o operador de identidade : 5 === "5" false ( 5 não é identico a "5")
+
+. O desigual restrito tem o mesmo papel do de identidade so que ele diz se é diferente (ex: 5 != "5" false 5, !== "5" true)
+
+=OPERADORES LOGICOS=
+===========================================================================================================================
+
+.! negação ( 'não' logico)
+.&& conjução ( 'e' logico)
+.|| disjunção ( 'ou' logico)
+
+
+ordem de execução 
+ .primeiro '!'
+ .segundo  '&&'
+ . terceiro  '||'
+
+=ORDEM FINAL DE PRECENDENCIA DOS OPERADORES=
+====================================================================================================================================
+
+.MAIS PRECENDENTE: ARITMETICOS
+
+.SEGUNDO MAIS PRECENDENTE: RELACIONAIS
+
+.TERCEIRO MAIS PRECEDENTE: !
+
+.QUARTO MAIS PRECEDENTE: &&
+
+.MENOS PRECEDENTE:  || 
+
+OPERADORES TERNÁRIO
+====================================================================================================================
+
+. teste ? true : false ( mostra se um valor for true ou false)
+   
+    Exemplo: média >= 7.0 ? "aprovado" : "reprovado"
+
+=DOM=
+====================================================================================================================
+
+.Arvore DOM
+selecionar OBJETO
+
+POR MARCA
+.getElementsByTagname('n')[] o indicador é a propria tag
+
+POR ID
+.getElementByTagId('n') o indicador é id 
+
+POR NOME  
+.getElementsByName('n')[] o indicador é name
+
+POR CLASSE
+.getElementsByClassName('n')[] o indicador é class
+
+POR SELECTOR
+.querySelector() quando é id se usa #, quando é class se usa . 
+
+.querySelectorAll()
+
+=EVENTOS DOM=
+===========================================================================================================
+  Eventos com o mouse
+      .mouseenter:disparado quando o mouse chega dentro da tag(exmplo: <div>);
+      .mousemove:dispara varias vezes quando o mouse se move dentro da tag(exemplo:<div>);
+      .mousedown:dispara quando se segura o botão do mouse dentro da tag(exemplo:<div>);
+      .mouseup:dispara quando se solta o botão do mouse dentro da tag(exemplo:<div>);
+      .click:dispara quando aperta e solta rapidamente o botão do mouse dentro da tag(exemplo:<div>);
+      .mouseout: dispara quando o mouse sai de dentro da tag(exemplo: <div>);
+  função
+      .conjunto de codigos que vão ser executadas quando um evento ocorrer.    
+=CONDIÇOES=
+================================================================================================================
+=IF=
+
+.condição simples
+if(Condições){
+       true
+}
+
+.condição complexa
+if(Condições){
+       true
+}else{
+      false
+}
+
+.condição aninhadas
+if(condição1){
+
+} else{
+     if(condição2){
+
+      } else{
+
+        }
+}
+=SWITCH=
+.condição múltipla
+switch {
+   case valor 1:
+
+   break// para o codigo
+   case valor 2:
+ 
+   break
+   case valor 3:
+
+   break
+   default: //caso nenhum dos valores forem sastifeitos
+
+   break
+}
+
+=REPETIÇÕES=
+
+// estrutura de repetição com teste logico no inicio
+.while(condição){
+
+
+}
+
+
+// estrutura de repetição com teste logico no final
+.do{
+
+} while(condição)
+
+
+
+
+.for (inicio; teste; incremento){
+
+}
+
+   
+   .EX:
+          
+           .var c=1
+		while(c<=10){
+
+                      c++
+                        }
+	   .for(var c=1; c<=10; c++) {
+
+			} 
+
+
+.for (var in array ){
+	
+}
+
+Ex: 
+
+for(let pos in valores){
+    console.log(`A posição ${pos} correponde ao valor ${valores[pos]}`)
+}
+
+
+  
+=Variaveis Compostas(Arreys)=
+================================================================================================================================
+
+.variaveis simples: amazana um valor por vez
+.Variaveia Compostas: devem ser capazes de amazenar mais de um valor por vez
+
+.um array ou um vetor ou uma variavel composta é uma variavel que tem varios elementos,
+ cada elemento é composto por seu valor e por uma chave de identificação que na maioria das
+ linguagens sempre começa com 0.
+
+.EX:
+      let num = [5,8,4]
+
+.acrescentar um valor
+
+	.EX: num[0] = 2
+	     num[1] = 9
+	     num[3] = 6
+		
+	     resultado:
+		[2,9,4,6]
+
+
+. num.push(valor): acrescenta o valor na ultima posição, criando um novo indice.
+. num.length: saber quantos elementos tem o arrey
+. num.sort(): colocar os elementos em ordem crescente .sort((a, b) => a - b) para ordenar valores maiores de 10
+. num.index0f(valor): busca o valor e retorna o indice, caso nao encontre o valor ira retorna -1.
+
+=FUNÇOES=
+====================================================================================================================================
+
+.São açoes executadas assim que são chamadas ou em decorrencia de algum evento.
+
+.Uma função pode receber parametros e retornar um resultado
+
+.	function ação(parametros){
+		
+		return resultado
+	}
+
+	ação(5)	//chamada
+
+=UM POUCO DE OBJETO=
+====================================================================================================================================
+
+.Array
+let amigo =[José,M,85.4]
+
+.Objeto
+let amigo = {nome:'José',sexo:'M',peso:85.4,engordar(p){}}
+
+=proximos passos=
+====================================================================================================================================
+
+.objetos
+
+.funçoes
+
+.modularização
+
+.RegEx
+
+.JSON
+
+.AJAX
+
+.NodeJS

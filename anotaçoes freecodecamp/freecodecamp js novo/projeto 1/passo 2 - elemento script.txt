@@ -1,0 +1,1 @@
+para carregar o javascript no html se deve usar o elemento <script></script> mas é recomendado que vc escreva o seu codigo em outro arquivo chamado por exemplo script.js e o elemento script deve ser reescrito para ser um link, assim <script src="script.js"></script>

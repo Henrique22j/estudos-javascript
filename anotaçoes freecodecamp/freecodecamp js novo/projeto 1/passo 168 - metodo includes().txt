@@ -1,0 +1,12 @@
+O método .includes() determina se um array contém um elemento e retornará verdadeiro ou falso.
+
+Aqui está um exemplo da sintaxe .includes():
+
+const numbersArray = [1, 2, 3, 4, 5]
+const number = 3
+
+if (numbersArray.includes(number)) {
+  console.log("The number is in the array.")
+}
+
+Após o loop for, adicione uma instrução if para verificar se a estimativa está na matriz de números. Você pode usar o método .includes() para verificar se o array contém a estimativa.

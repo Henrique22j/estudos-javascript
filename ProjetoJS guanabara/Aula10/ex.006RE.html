@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            font: normal 10pt Arial;
+            background-image: url('https://www.giantbomb.com/a/uploads/scale_small/8/89064/1334882-312e302e302e38322d3534.jpg');
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 300px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        hmm...
+    </div>
+
+    <script>
+        let area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter',entrar)
+        area.addEventListener('mouseout', saiu)
+        function clicar(){
+            area.innerText = 'Capoera'
+            area.style.backgroundImage = 'url(https://media.tenor.com/W_cH9yl1uNkAAAAM/malphite.gif)'
+        }
+        function entrar(){
+            area.innerText = "Analise!"
+            area.style.backgroundImage = 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwHZx3HcvVqEsWljHH-3nwtVksKMcR9w_GPWOCtl_bazmT49M5oBiVViW_hh-SSGCPkeg&usqp=CAU)'
+        }
+
+        function saiu(){
+            area.innerText = 'vo base'
+            area.style.backgroundImage = 'url(https://media.tenor.com/LJ4WJUH9290AAAAM/malphite.gif)'
+        }
+
+    </script>
+</body>
+</html>

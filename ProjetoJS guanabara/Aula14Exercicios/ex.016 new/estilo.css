@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(to right, brown 40%,rgb(255, 60, 0) );
+    background-attachment: fixed;
+    text-align: center;
+}
+
+header, footer{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color: rgba(255, 162, 0, 0.804);
+}
+
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 13px;
+    width: 500px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px rgba(59, 15, 15, 0.497);
+}

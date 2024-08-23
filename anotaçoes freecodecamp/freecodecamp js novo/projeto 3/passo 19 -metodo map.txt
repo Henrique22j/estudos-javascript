@@ -1,0 +1,10 @@
+O método map() é usado para iterar por um array e retornar um novo array. É útil quando você deseja criar um novo array com base nos valores de um array existente. Por exemplo:
+
+Código de exemplo
+números constantes = [1, 2, 3];
+const doubledNumbers = números.map((número) => número * 2); // doubledNumbers serão [2, 4, 6]
+Observe que o método map() usa uma função como argumento. Isso é chamado de função de retorno de chamada, que é uma função passada para outra função como argumento. No exemplo acima, a função de retorno de chamada é (número) => número * 2 e é executada em cada elemento da matriz de números. O método map() então retorna um novo array com os resultados.
+
+Passe uma função de retorno de chamada para o método map(). A função de retorno de chamada deve usar a música como parâmetro, usar a sintaxe da função de seta e ter um corpo vazio.
+
+  const songsHTML = array.map((song)=>{return`<li id="song-${song.id}" class="playlist-song"></li>`});

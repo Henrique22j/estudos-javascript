@@ -1,0 +1,9 @@
+Seu outro bug ocorre se você adicionar uma entrada de café da manhã, preenchê-la e adicionar uma segunda entrada de café da manhã. Você verá que os valores adicionados desapareceram.
+
+Isso ocorre porque você está atualizando o innerHTML diretamente, o que não preserva o conteúdo de entrada. Altere sua atribuição innerHTML para usar o método insertAdjacentHTML() de targetInputContainer. Não passe nenhum argumento ainda.
+
+O método insertAdjacentHtml leva dois argumentos. O primeiro argumento é uma string que especifica a posição do elemento inserido. O segundo argumento é uma string contendo o HTML a ser inserido.
+
+Para o primeiro argumento, passe a string “beforeend” para inserir o novo elemento como o último filho de targetInputContainer.
+
+Para o segundo argumento, passe sua variável HTMLString.

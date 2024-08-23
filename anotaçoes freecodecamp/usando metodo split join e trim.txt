@@ -1,0 +1,11 @@
+// Altere apenas o código abaixo desta linha
+function urlSlug(title) {
+  let minus = title.toLowerCase()
+   return minus.trim().split(/\s+/).join("-") 
+  
+}
+// Altere apenas o código acima desta linha
+console.log(urlSlug(' Winter Is  Coming'))
+//trim() remove espaços vazios no inicio e no fim da string
+
+//resultado 'winter-is-coming'

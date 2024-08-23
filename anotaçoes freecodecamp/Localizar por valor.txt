@@ -1,0 +1,13 @@
+function whatIsInAName(collection, source) {
+  return collection.filter(obj => {
+    for(let key in source){
+      if(obj[key] !== source[key]){
+        return false
+      }   
+    }
+    return true
+  })
+}
+
+
+console.log(whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }], { "apple": 1, "cookie": 2 }))

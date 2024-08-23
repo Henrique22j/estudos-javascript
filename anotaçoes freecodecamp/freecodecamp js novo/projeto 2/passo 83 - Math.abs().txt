@@ -1,0 +1,6 @@
+Math.abs() é um método JavaScript integrado que retornará o valor absoluto de um número.
+
+const num = -5;
+Math.abs(num); // 5
+
+Em seu texto span, envolva sua referência restantesCalories em Math.abs() para garantir que o valor seja positivo.

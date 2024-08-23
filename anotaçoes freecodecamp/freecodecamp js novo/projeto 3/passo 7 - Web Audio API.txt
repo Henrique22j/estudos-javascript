@@ -1,0 +1,7 @@
+Adicionamos o restante das músicas ao array allSongs para você.
+
+A seguir, você aprenderá sobre a API Web Audio e como usá-la para reproduzir músicas. Todos os navegadores modernos oferecem suporte à API Web Audio, que permite gerar e processar áudio em aplicativos da web.
+
+Use const para criar uma variável chamada audio e defina-a igual a new Audio(). Isso criará um novo elemento de áudio HTML5.
+
+const audio = new Audio()

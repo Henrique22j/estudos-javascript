@@ -1,0 +1,7 @@
+Ao abrir o console, você deverá ver o resultado null. O método match retorna null quando nenhuma correspondência é encontrada. Neste caso, a função isInvalidInput deve retornar null quando a entrada for um número válido sem qualquer notação científica.
+
+null em JavaScript é uma primitiva especial que representa a ausência intencional de um valor. Em um contexto booleano, null é considerado false e é avaliado como false em uma instrução condicional.
+
+Agora que terminou de testar sua função isInvalidInput, você pode remover a instrução console.log.
+
+Na programação, null pretende representar a ausência de um valor. Nesse caso, se o usuário inserir uma entrada inválida, você deseja alertá-lo e retornar nulo para indicar que a função falhou.

@@ -1,0 +1,47 @@
+Anteriormente, você usou um array para armazenar strings. Mas os arrays podem armazenar qualquer tipo de dados. Desta vez, seu array armazenará objetos. Os objetos são semelhantes aos arrays, mas com algumas diferenças. Uma diferença é que os objetos usam propriedades, ou chaves, para acessar e modificar dados.
+
+Os objetos são indicados por chaves. Um objeto vazio seria semelhante a {}.
+
+As propriedades do objeto são escritas como pares key: value, onde key é o nome da propriedade (ou a chave) e value é o valor que a propriedade contém. Por exemplo, aqui está um objeto com uma chave de nome definida como "Quincy Larson".
+
+{
+  Nome: "Quincy Larson"
+}
+
+Assim como os valores de array, as propriedades dos objetos são separadas por vírgula. Adicione uma vírgula após sua propriedade name e adicione uma propriedade de texto de botão com o valor de uma array vazio.
+
+Observe que, como o nome da propriedade tem mais de uma palavra, você precisará colocá-lo entre aspas. Por exemplo:
+
+{
+  nome: "Noemi",
+  "cor favorita": "roxo"
+}
+
+chamar o uma function dentro de outra function
+
+function myFunction(){
+mySecondFunction()
+
+Agora você precisa passar o argumento location para a chamada de atualização. Você passa argumentos incluindo-os entre parênteses da chamada de função. Por exemplo, chamar myFunction com um argumento arg seria semelhante a:
+
+minhaFunção(arg)
+
+A  array de locais contém dois locais: a "praça da cidade" e a "loja". Atualmente você está passando todo esse array para a função de atualização.
+
+Passe apenas o primeiro elemento da  array de locais adicionando [0] no final da variável. Por exemplo: minhaFunção(arg[0]);.
+
+Isso é chamado de notação de colchetes. Os valores em uma  array são acessados ​​por índice. Os índices são valores numéricos e começam em 0 – isso é chamado de indexação baseada em zero. arg[0] seria o primeiro elemento na  array arg.
+}
+
+Use a notação de colchetes para acessar um objeto dentro do array de weapons e atribuí-lo à sua variável newWeapon. Coloque a variável currentWeapon entre colchetes.
+
+Ao usar uma variável entre colchetes, você acessa a propriedade ou índice pelo valor dessa variável.
+
+Por exemplo, este código usa a variável de índice para acessar um valor de array.
+
+let value = array[index];
+
+weapons[newWeapon] é um objeto. Use a notação de ponto para obter a propriedade name desse objeto:
+
+weapons[newWeapon].name
+

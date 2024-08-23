@@ -1,0 +1,37 @@
+Crie uma função que some dois argumentos juntos. Se apenas um argumento for fornecido, então retorne uma função que espera um argumento e retorna a sua soma.
+
+Por exemplo, addTogether(2, 3) deve retornar 5 e addTogether(2) deve retornar uma função.
+
+Chamar essa função retornada com um argumento retornará a soma:
+
+var sumTwoAnd = addTogether(2);
+sumTwoAnd(3) retorna 5.
+
+Se algum argumento não for um número válido, retorne undefined.
+
+
+
+function addTogether() {
+  let arg = [...arguments] 
+  let acum = 0;
+  if(arg.length === 2){
+      for(let cont in arg){
+    if(typeof arg[cont] === 'number'){
+      acum += arg[cont]
+  }else{
+    return undefined
+    break
+      }
+    }
+  return acum;
+  }else{
+    if(typeof arg[0] !== 'number'){
+      return undefined
+    }else{
+      return (arg2) => addTogether(arg[0],arg2)
+      }
+    }
+  }
+  
+
+console.log(addTogether(4)(2));

@@ -1,0 +1,28 @@
+function binaryAgent(str) {
+ let arrBi = str.split(' ')
+ let varTemp = 0;
+ let some = 0;
+ let arrNumb = [];
+
+
+for(let cont = 0; cont < arrBi.length; cont++){
+  for(let numb = arrBi[cont].length - 1; numb > 0; numb--){
+    varTemp = arrBi[cont]
+    if(varTemp[numb] === '1'){
+      some+=Math.pow(2,varTemp.length - 1 - numb)
+    }   
+  }
+  arrNumb.push(some)
+  some = 0;
+}
+
+let arrStr = [];
+
+  for(let cont2 = 0; cont2 < arrNumb.length; cont2++){
+    arrStr.push(String.fromCharCode(arrNumb[cont2]))
+  }
+
+  return arrStr.join('');
+}
+
+console.log(binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 01100010 01101111 01101110 01100110 01101001 01110010 01100101 01110011 00100000 01100110 01110101 01101110 00100001 00111111"));
